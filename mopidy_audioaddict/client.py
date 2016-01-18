@@ -12,7 +12,7 @@ class AudioAddict(object):
 
     proxies = None
 
-    def __init__(self, username, password, quality, difm, radiotunes, rockradio, jazzradio, frescaradio, proxy=None):
+    def __init__(self, username, password, quality, difm, radiotunes, rockradio, jazzradio, frescaradio, classicalradio, proxy=None):
         self._cache = {}
         self._channels = {}
         self._backoff_until = time.time()
