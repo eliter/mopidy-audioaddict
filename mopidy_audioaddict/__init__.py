@@ -26,6 +26,7 @@ class Extension(ext.Extension):
         schema['rockradio'] = config.Boolean(optional=True)
         schema['jazzradio'] = config.Boolean(optional=True)
         schema['frescaradio'] = config.Boolean(optional=True)
+        schema['classicalradio'] = config.Boolean(optional=True)
         return schema
 
     def setup(self, registry):

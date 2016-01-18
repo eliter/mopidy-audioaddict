@@ -63,6 +63,7 @@ class AudioAddictBackend(pykka.ThreadingActor, backend.Backend):
             config['audioaddict']['rockradio'],
             config['audioaddict']['jazzradio'],
             config['audioaddict']['frescaradio'],
+            config['audioaddict']['classicalradio'],
             proxy=full_proxy
         )
         self.library = AudioAddictLibrary(backend=self)

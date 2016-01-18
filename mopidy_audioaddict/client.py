@@ -26,6 +26,7 @@ class AudioAddict(object):
         self._rockradio = rockradio
         self._jazzradio = jazzradio
         self._frescaradio = frescaradio
+        self._classicalradio = classicalradio
 
         # Set up proxy
         if proxy is not None:
@@ -56,6 +57,8 @@ class AudioAddict(object):
             stationlist.append({'id': 4, 'name': 'JazzRadio', 'shortcode': 'jazzradio'})
         if self._frescaradio:
             stationlist.append({'id': 5, 'name': 'FrescaRadio', 'shortcode': 'frescaradio'})
+        if self._classicalradio:
+            stationlist.append({'id': 5, 'name': 'ClassicalRadio', 'shortcode': 'classicalradio'})
 
         if not stationlist:
             # Default to at least one network
@@ -81,6 +84,9 @@ class AudioAddict(object):
             elif radiostation == 5:
                 station_name = 'FrescaRadio'
                 hostname = 'listen.frescaradio.com'
+            elif radiostation == 6:
+                station_name = 'ClassicalRadio'
+                hostname = 'listen.classicalradio.com'
             else:
                 return []
 
